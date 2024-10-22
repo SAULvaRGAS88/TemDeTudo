@@ -1,0 +1,56 @@
+﻿@model TemDeTudo.Models.Seller
+
+<h1>Deletar Vendedor</h1>
+
+<div>
+    <h4>Seller Details</h4>
+
+    <h3>Voçe tem certeza que deseja deletar este vendedor? @Html.DisplayFor(model => model.Name)</h3>   
+<hr />
+
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+           @Html.DisplayFor(model => model.Name)
+
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BirthDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BirthDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Salary)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Salary)
+
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Depatment)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Depatment.Name)
+
+        </dd>
+    </dl>
+
+    <form asp-action="Delete" >
+        <imput type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete"  class="btn btn-dark"/>
+    </form>
+</div>
