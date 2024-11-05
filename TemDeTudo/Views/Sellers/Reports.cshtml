@@ -1,0 +1,53 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860,
+    isso é a parte de comentários de HTML
+*@
+@{
+    // Aqui é o C#
+}
+<h1>Painel de Imformação</h1>
+
+<h3>
+    Total da Folha de pagamentos:<br /> (soma dos sálarios dos Vendedores)
+
+</h3>
+
+<p>
+    R$ @ViewData["TotalFolhaPagamento"]
+</p>
+
+<h3>
+    Maior Salário:<br /> 
+
+</h3>
+
+<p>
+   R$ @ViewData["MaiorSalario"]
+</p>
+
+<h3>
+    Menor Salário:<br />
+
+</h3>
+
+<p>
+    R$ @ViewData["MenorSalario"]
+</p>
+
+<h3>
+    Média de Salários:<br />
+
+</h3>
+
+<p>
+    R$ @ViewData["MediaSalarios"]
+</p>
+
+<h3>
+   Ricos da empresa:<br />
+
+</h3>
+
+<p>
+    Quantidade: @ViewData["Ricos"]
+</p>
